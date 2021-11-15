@@ -1,0 +1,23 @@
+{
+  "name": "backend-server-http-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -watchAll",
+    "coverage":"jest --coverage",
+    "dev": "concurrently \"watchify ./client/js/index.js -o bundle.js\" \"python -m http.server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "jest": "^27.3.1",
+    "supertest": "^6.1.6",
+    "watchify": "^4.0.0"
+  }
+}
